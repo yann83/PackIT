@@ -5,16 +5,21 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 //Imporation de Fonts Awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faUser  } from '@fortawesome/free-solid-svg-icons'
+import { faKey  } from '@fortawesome/free-solid-svg-icons'
 
 //Importation de Vue Routes
 import VueRouter from 'vue-router'
 import Routes from './Routes'
 
 //Utilisation de Fonts Awesome
-library.add(faUserSecret)
+//https://fontawesome.com/v6.0/icons
+library.add(faUser)
+library.add(faKey )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+
 
 Vue.config.productionTip = false
 
